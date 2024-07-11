@@ -1,0 +1,64 @@
+.main-menu{
+  &-gbox{
+    max-height: calc(100vh - 100px);
+    overflow-y: scroll;
+    background: #fff;
+    padding: 20px;
+    overflow-y: scroll;
+    display: flex;
+    flex-direction: column;
+    &-item{
+      display: flex;
+      &-name{
+        color: #000;
+        cursor: pointer;
+        width: 120px;
+        display: block;
+        font-size: 16px;
+        &:hover{
+          color: var(--ant-blue);
+        }
+      }
+      &-right{
+        flex: 1;
+        width: 0;
+        display: flex;
+        flex-direction: column;
+        &-tag{
+          color: #333;
+          font-size: 15px;
+          &:hover{
+            color: var(--ant-blue);
+            cursor: pointer;
+          }
+        }
+        &-name{
+          font-size: 13px;
+          color: #666;
+          margin: 10px 20px 10px 0px;
+          display: inline-block;
+          &:hover{
+            color: var(--ant-blue);
+            cursor: pointer;
+          }
+        }
+      }
+    }
+
+  }
+  &-title{
+    position: absolute;
+    width: 100px;
+    height: 55px;
+    &:hover{
+      .main-menu-box{
+        display: inline-block;
+      }
+      &:hover{
+        .main-menu-box{
+          display: inline-block;
+        }
+      }
+    }
+  }
+}
